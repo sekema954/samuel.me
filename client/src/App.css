@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.glow {
+  text-shadow: 0 0 8px rgba(255, 223, 0, 0.8), 0 0 16px rgba(255, 223, 0, 0.6), 0 0 24px rgba(255, 223, 0, 0.4);
+}
+
+.glow-bar {
+  box-shadow: 0 0 5px rgba(255, 223, 0, 0.8), 0 0 10px rgba(255, 223, 0, 0.6), 0 0 15px rgba(255, 223, 0, 0.4);
+}
+
+
+
+
+
+/**HOME PAGE**/
+.bounceArrow{
+  animation: bounceArrow 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+/**HOME PAGE**/
+@keyframes bounceArrow{
+    0%{ transform: translateY(-5px)  }
+    50% { transform: translateY(10px) }
+    100% { transform: translateY(-5px) }
+}
+
+
+
+/* src/styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
