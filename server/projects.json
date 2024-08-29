@@ -40,6 +40,70 @@
             "source_code":"",
             "go_live":""
 
+        },
+
+
+
+        {
+            "id": 3,
+            "website_name": "JobHuntly",
+            "website_description": "A comprehensive job search app that empowers users to find and apply for tailored job opportunities, offering a seamless and intuitive experience from discovery to application, helping individuals advance their careers with ease.",
+            "website_features":[
+                "Responsive Design",
+                "Dynamic Content",
+                "API intergration"
+            ],
+            "technical_stack":[
+                "REACT",
+                "TAILWIND",
+                "JAVASCRIPT",
+                "NODE"
+            ],
+            "thumbnail":"https://i.imgur.com/lMFsPlP.png",
+            "source_code":"",
+            "go_live":""
+
+        },
+
+        {
+            "id": 4,
+            "website_name": "EVERCURES",
+            "website_description": "A premier nail care site that offers a wide range of high-quality nail products, expert tips, and personalized services, designed to help you achieve stunning, salon-quality nails at home, while staying on top of the latest trends and innovations in nail art and care.",
+            "website_features":[
+                "Responsive Design",
+                "Dynamic Content",
+                "Booking System"
+            ],
+            "technical_stack":[
+                "HTML",
+                "CSS",
+                "JAVASCRIPT"
+            ],
+            "thumbnail":"https://i.imgur.com/G5YlSTp.png",
+            "source_code":"",
+            "go_live":""
+
+        },
+
+
+        {
+            "id": 5,
+            "website_name": "AnimeLib",
+            "website_description": "An immersive anime site that lets you explore the world of anime by watching trailers, discovering new series, and reading detailed descriptions, all designed to enhance your viewing experience and keep you updated on the latest releases and fan favorites.",
+            "website_features":[
+                "Responsive Design",
+                "Dynamic Content",
+                "API intergration"
+            ],
+            "technical_stack":[
+                "HTML",
+                "CSS",
+                "JAVASCRIPT"
+            ],
+            "thumbnail":"https://i.imgur.com/Es7nfDM.png",
+            "source_code":"",
+            "go_live":""
+
         }
 
 

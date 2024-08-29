@@ -17,7 +17,7 @@ function Navbar() {
   }, []);
 
   return (
-    <div className={`fixed top-0 w-full z-50 transition-all duration-300 ${isSticky ? 'bg-black shadow-2xl' : 'bg-black'}`}>
+    <div className={`top-0 w-full z-50 transition-all duration-300 ${isSticky ? 'bg-black shadow-2xl' : 'bg-black'}`}>
       <nav className='w-full h-[90px] flex items-center justify-between px-[25px]'>
         <div>
           <p className='text-yellow-300 font-bold text-[28px] tracking-widest uppercase glow'>
@@ -30,8 +30,8 @@ function Navbar() {
           <div className={`w-[30px] h-[4px] bg-yellow-300 transition-all duration-300 ${isClicked ? '-rotate-45 -translate-y-[10px]' : ''}`}></div>
         </div>
       </nav>
-      <div className={`overflow-hidden transition-all duration-500 ${isClicked ? 'h-[270px]' : 'h-0'} bg-black flex items-center justify-center`}>
-        <ul className={`text-white text-center font-semibold text-lg transition-opacity duration-500 ${isClicked ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+      <div className={`overflow-hidden transition-all duration-500 ${isClicked ? 'h-[270px]' : 'h-0'} bg-white flex items-center justify-center`}>
+        <ul className={`text-black text-center font-semibold text-lg transition-opacity duration-500 ${isClicked ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
           <li className='my-4 hover:text-yellow-400 transition-colors duration-300 glow'><a href="/home">Home</a></li>
           <li className='my-4 hover:text-yellow-400 transition-colors duration-300 glow'><a href="/about">About</a></li>
           <li className='my-4 hover:text-yellow-400 transition-colors duration-300 glow'><a href="/projects">Projects</a></li>

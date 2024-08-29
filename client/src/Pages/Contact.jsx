@@ -2,8 +2,8 @@ import React from 'react';
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="p-8 bg-gray-50">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+    <section className="p-8 bg-gray-50 flex item-center justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start h-full">
         <div className="flex justify-center items-center">
           <iframe
             className="w-full h-[470px] border-0 rounded-lg shadow-md"
