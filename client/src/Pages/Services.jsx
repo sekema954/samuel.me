@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import frontend from '../Assets/Images/frontend.avif';
 import responsive from '../Assets/Images/responsive.jpg';
 import api from '../Assets/Images/api.jpg';
 import security from '../Assets/Images/security.jpg';
 import Solid from '../Components/Solid';
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 function Services() {
   const myServices = [
@@ -13,13 +15,22 @@ function Services() {
     { id: 4, src: security, name: 'Web Security', context: "Focus on protecting websites and web applications from cyber threats.", alt: "security" },
   ];
 
+
+  useEffect(()=>{
+    AOS.init({
+      disable: "phone",
+      duration: 700,
+      easing: "ease-out-cubic",
+    });
+  });
+
   return (
     <div>
       <div className='flex flex-col lg:flex-row justify-between items-center h-auto px-4 lg:px-[55px] py-4'>
-        <p className='font-[700] text-[20px] lg:text-[25px] text-center lg:text-left'>
+        <p data-aos="fade-right" className='font-[700] text-[20px] lg:text-[25px] text-center lg:text-left'>
           I provide the best and<br />affordable services
         </p>
-        <div className='text-center lg:text-left'>
+        <div data-aos="fade-left" className='text-center lg:text-left'>
           <p className='text-lg font-semibold'>Services</p>
           <p className='text-sm lg:text-base'>I provide a variety of services to my clients.</p>
         </div>
@@ -48,7 +59,7 @@ function ServiceItem({ service }) {
   };
 
   return (
-    <div
+    <div data-aos="zoom-in-up"
       className='rounded-[10px] w-full sm:w-[250px] md:w-[300px] h-[200px] lg:h-[220px] bg-black relative flex items-center text-center justify-center shadow-lg'
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
+
+/* src/styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/**global styling**/
+
 *{
   padding: 0;
   margin: 0;
@@ -11,6 +18,8 @@
   font-style: normal;
 }
 
+
+/***navbar text glow*/
 .glow {
   text-shadow: 0 0 8px rgba(255, 223, 0, 0.8), 0 0 16px rgba(255, 223, 0, 0.6), 0 0 24px rgba(255, 223, 0, 0.4);
 }
@@ -37,9 +46,29 @@
     100% { transform: translateY(-5px) }
 }
 
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes appear{
+  0%{
+    opacity: 0;
+    transform: translateX(-100px);
+    
+  }
+  100%{opacity: 1;
+  }
+}
 
 
-/* src/styles.css */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@keyframes slideUp{
+  0%{opacity: 0;
+    transform: translateY(100px);
+  }
+  100%{
+    opacity: 1;
+  }
+}

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import Solid from '../Components/Solid';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Projects() {
   const [data, setData] = useState([]);
@@ -41,6 +43,11 @@ function Projects() {
 
   useEffect(() => {
     fetchProjects();
+    AOS.init({
+      disable: "phone",
+      duration: 700,
+      easing: "ease-out-cubic",
+    })
   }, []);
 
   return (
@@ -51,12 +58,12 @@ function Projects() {
             <div className='lg:grid lg:grid-cols-2 text-white'>
               <div className='px-[30px] py-[30px] flex items-center justify-center'>
                 <div className='lg:w-[400px] lg:h-[300px] bg-white'>
-                  <img className='w-full h-full object-cover' src={selectedProject.thumbnail} alt={selectedProject.website_name} />
+                  <img data-aos="zoom-in-up" className='w-full h-full object-cover' src={selectedProject.thumbnail} alt={selectedProject.website_name} />
                 </div>
               </div>
               <div className='px-[30px] py-[30px]'>
-                <p className='my-4 text-2xl font-bold'>{selectedProject.website_name}</p>
-                <div className='flex gap-3 items-center my-4'>
+                <p data-aos="fade-right" className='my-4 text-2xl font-bold'>{selectedProject.website_name}</p>
+                <div data-aos="fade-right" className='flex gap-3 items-center my-4'>
                   <FontAwesomeIcon className='text-yellow-300' icon={faStar} />
                   <FontAwesomeIcon className='text-yellow-300' icon={faStar} />
                   <FontAwesomeIcon className='text-yellow-300' icon={faStar} />
@@ -65,22 +72,22 @@ function Projects() {
                   <p className='px-4'>Season 1</p>
                 </div>
                 <div className='my-5'>
-                  <p>{selectedProject.website_description}</p>
+                  <p data-aos="fade-right">{selectedProject.website_description}</p>
                 </div>
-                <div className='my-5 flex gap-4'>
+                <div data-aos="fade-right" className='my-5 flex gap-4'>
                   <p className='text-[10px] lg:text-[15px]'>Features:</p>
                   {selectedProject.website_features.map((feature, index) => (
                     <p className='text-[10px] lg:text-[15px]' key={index}>{feature}</p>
                   ))}
                 </div>
-                <div className='my-5 flex gap-4'>
+                <div data-aos="fade-right" className='my-5 flex gap-4'>
                   <p className='text-[10px] lg:text-[15px]'>Technical Stack:</p>
                   {selectedProject.technical_stack.map((tech, index) => (
                     <p className='text-[10px] lg:text-[15px]' key={index}>{tech}</p>
                   ))}
                 </div>
-                <div className=''>
-                  <a className='mx-4' href={selectedProject.go_live}>
+                <div data-aos="fade-right">
+                  <a className='mx-4' href={selectedProject.go_live} target='_blank'>
                     <button className='w-[120px] my-4 bg-yellow-500 h-[35px] rounded-[5px] transition-all duration-500 hover:bg-yellow-600'>Go Live</button>
                   </a>
                   <a className='mx-4' href={selectedProject.source_code}>
@@ -100,9 +107,9 @@ function Projects() {
           <div className='flex flex-wrap px-[30px] items-center justify-center gap-[15px]'>
             {data.length > 0 ? (
               data.map(project => (
-                <div 
+                <div data-aos=""
                   key={project.id} 
-                  className={`lg:w-[260px] h-full text-black p-4 ${activeProjectId === project.id ? 'border border-yellow-400' : ''}`}
+                  className={`lg:w-[260px] h-full text-black p-4 cursor-pointer ${activeProjectId === project.id ? 'border border-yellow-400' : ''}`}
                   onClick={() => handleActive(project)}
                 >
                   <img src={project.thumbnail} alt={project.website_name} className='w-full h-full object-cover mt-2 shadow shadow-md shadow-white rounded-[10px]' />

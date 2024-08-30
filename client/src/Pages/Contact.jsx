@@ -1,18 +1,28 @@
-import React from 'react';
+import { React, useEffect } from 'react';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 const ContactSection = () => {
+
+  useEffect(()=>{
+    AOS.init({
+      disable: "phone",
+      duration: 700,
+      easing: "ease-out-cubic",
+    })
+  })
   return (
     <section className="p-8 bg-gray-50 flex item-center justify-center">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start h-full">
         <div className="flex justify-center items-center">
-          <iframe
+          <iframe data-aos="zoom-in-up"
             className="w-full h-[470px] border-0 rounded-lg shadow-md"
             src="https://lottie.host/embed/f29ebafa-11a1-487e-889b-2e7d0d8ad327/Xckm8xszs7.json"
             title="Contact Animation"
           ></iframe>
         </div>
         <div className="bg-white shadow-lg rounded-lg p-6">
-          <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">Get in Touch</h1>
+          <h1 data-aos="fade-right" className="text-3xl font-bold text-gray-800 mb-6 text-center">Get in Touch</h1>
           <form
             id="contact-form"
             action="https://api.web3forms.com/submit"
@@ -66,7 +76,7 @@ const ContactSection = () => {
               <input
                 type="submit"
                 value="Send"
-                className="p-3 w-full bg-yellow-500 text-white rounded-md hover:bg-yellow-600 transition-all duration-300"
+                className="p-3 w-full bg-yellow-500 text-white rounded-md hover:bg-yellow-600 transition-all duration-30 cursor-pointer"
               />
             </div>
           </form>
