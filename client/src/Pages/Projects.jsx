@@ -16,7 +16,7 @@ function Projects() {
   };
 
   const fetchProjects = async () => {
-    const url = "http://localhost:3001/projects";
+    const url = process.env.REACT_APP_API_URL;
     const options = {
       method: "GET"
     };

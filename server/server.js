@@ -1,13 +1,17 @@
+require('dotenv').config();
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const cors = require("cors");
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 
 app.use(cors());
+
+
+app.use(express.static(path.join(__dirname, '../client/build')));
 
 // Endpoint to serve the JSON file
 app.get('/projects', (req, res) => {
@@ -20,6 +24,10 @@ app.get('/projects', (req, res) => {
         }
     });
 });
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+  });
 
 // Start the server
 app.listen(PORT, () => {
