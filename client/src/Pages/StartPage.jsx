@@ -11,12 +11,10 @@ function StartPage() {
 
     useEffect(() => {
         if (dimensions) {
-            // Navigate to /home after the animation duration (0.5s in this case)
             const timer = setTimeout(() => {
                 navigate('/home');
-            }, 500); // 500ms to match the duration of the animation
+            }, 500);
 
-            // Cleanup the timer if the component unmounts before the navigation happens
             return () => clearTimeout(timer);
         }
     }, [dimensions, navigate]);

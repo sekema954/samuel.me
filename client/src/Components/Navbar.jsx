@@ -17,11 +17,11 @@ function Navbar() {
   }, []);
 
   return (
-    <div className={`top-0 w-full z-50 transition-all duration-300 ${isSticky ? 'bg-black shadow-2xl' : 'bg-black'}`}>
+    <div className={`top-0 w-full z-50 transition-all duration-300 ${isSticky ? 'bg-black shadow-2xl fixed' : 'bg-black'}`}>
       <nav className='w-full h-[90px] flex items-center justify-between px-[25px]'>
         <div>
           <p className='text-yellow-300 font-bold text-[28px] tracking-widest uppercase glow'>
-            Web Portfolio
+            P<span className='text-red-500'>o</span>rtf<span className='text-red-500'>o</span>li<span className='text-red-500'>o</span>
           </p>
         </div>
         <div onClick={handleClick} className="cursor-pointer flex flex-col justify-center items-center relative w-[30px] h-[30px]">
@@ -32,7 +32,7 @@ function Navbar() {
       </nav>
       <div className={`overflow-hidden transition-all duration-500 ${isClicked ? 'h-[270px]' : 'h-0'} bg-white flex items-center justify-center`}>
         <ul className={`text-black text-center font-semibold text-lg transition-opacity duration-500 ${isClicked ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-          <li className='my-4 hover:text-yellow-400 transition-colors duration-300 glow'><a href="/home">Home</a></li>
+          <li className='my-4 hover:text-yellow-400 transition-colors duration-300 glow'><a href="/">Home</a></li>
           <li className='my-4 hover:text-yellow-400 transition-colors duration-300 glow'><a href="/about">About</a></li>
           <li className='my-4 hover:text-yellow-400 transition-colors duration-300 glow'><a href="/projects">Projects</a></li>
           <li className='my-4 hover:text-yellow-400 transition-colors duration-300 glow'><a href="/contact">Contact</a></li>

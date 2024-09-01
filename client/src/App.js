@@ -1,7 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
-import StartPage from './Pages/StartPage';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import About from './Pages/About';
@@ -15,8 +14,7 @@ function App() {
       <Navbar></Navbar>
         <div className="App"></div>
         <Routes>
-        <Route path='/' element={<StartPage></StartPage>}></Route>
-          <Route path='/home' element={<HomePage></HomePage>}></Route>
+          <Route exact path='/' element={<HomePage></HomePage>}></Route>
           <Route path='/about' element={<About></About>}></Route>
           <Route path='/projects' element={<Projects></Projects>}></Route>
           <Route path='/services' element={<Services></Services>}></Route>

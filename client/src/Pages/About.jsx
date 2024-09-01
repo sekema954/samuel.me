@@ -25,6 +25,11 @@ function About() {
                     <p data-aos="fade-right" className='text-lg text-gray-700'>
                         I love creating seamless and intuitive user experiences. The ever-changing web technologies inspire me to keep learning and innovating, blending design and code to build modern, dynamic web applications.
                     </p>
+
+                    <a href='/resume' data-aos="fade-right" className='text-yellow-700 mt-5'>
+                        Download CV
+                    </a>
+
                 </div>
                 <div className='flex items-center justify-center'>
                     <img data-aos="zoom-in-up" className='w-full h-auto max-w-xs rounded-lg shadow-lg' src={require('../Assets/Images/profile-pic.png')} alt="Profile" />

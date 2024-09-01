@@ -83,7 +83,7 @@ function Projects() {
                 <div data-aos="fade-right" className='my-5 flex gap-4'>
                   <p className='text-[10px] lg:text-[15px]'>Technical Stack:</p>
                   {selectedProject.technical_stack.map((tech, index) => (
-                    <p className='text-[10px] lg:text-[15px]' key={index}>{tech}</p>
+                    <img className='w-[17px] h-[15px]' key={index} src={tech}></img>
                   ))}
                 </div>
                 <div data-aos="fade-right">
