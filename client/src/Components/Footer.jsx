@@ -27,7 +27,7 @@ function Footer() {
                             <a href='/projects' class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">Projects</a>
                             <a href='/contact' class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">Contact</a>
                             <div class="flex flex-row space-x-8 items-center justify-between">
-                                <a href='https://www.facebook.com/profile.php?id=61563736215354' target='_blank'>
+                                <a href='https://www.facebook.com/profile.php?id=61563736215354' target='_blank' rel="noreferrer">
                                     <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M3.89782 12V6.53514H5.67481L5.93895 4.39547H3.89782V3.03259C3.89782 2.41516 4.06363 1.99243 4.91774 1.99243H6V0.0847928C5.47342 0.0262443 4.94412 -0.00202566 4.41453 0.000112795C2.84383 0.000112795 1.76542 0.994936 1.76542 2.82122V4.39147H0V6.53114H1.76928V12H3.89782Z" fill="white"/>
                                     </svg>                            

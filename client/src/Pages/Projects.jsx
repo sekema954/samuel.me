@@ -16,7 +16,8 @@ function Projects() {
   };
 
   const fetchProjects = async () => {
-    const url = process.env.REACT_APP_API_URL;
+    const url = process.env.REACT_APP_API_URL; 
+    console.log("API URL:", url);
     const options = {
       method: "GET"
     };
@@ -83,11 +84,11 @@ function Projects() {
                 <div data-aos="fade-right" className='my-5 flex gap-4'>
                   <p className='text-[10px] lg:text-[15px]'>Technical Stack:</p>
                   {selectedProject.technical_stack.map((tech, index) => (
-                    <img className='w-[17px] h-[15px]' key={index} src={tech}></img>
+                    <img className='w-[17px] h-[15px]' key={index} src={tech} alt={tech}></img>
                   ))}
                 </div>
                 <div data-aos="fade-right">
-                  <a className='mx-4' href={selectedProject.go_live} target='_blank'>
+                  <a className='mx-4' href={selectedProject.go_live} target='_blank' rel="noreferrer">
                     <button className='w-[120px] my-4 bg-yellow-500 h-[35px] rounded-[5px] transition-all duration-500 hover:bg-yellow-600'>Go Live</button>
                   </a>
                   <a className='mx-4' href={selectedProject.source_code}>
