@@ -34,7 +34,7 @@ function Navbar() {
         <ul className={`text-black text-center font-semibold text-lg transition-opacity duration-500 ${isClicked ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
           <li className='my-4 hover:text-yellow-400 transition-colors duration-300 glow'><a href="/">Home</a></li>
           <li className='my-4 hover:text-yellow-400 transition-colors duration-300 glow'><a href="/about">About</a></li>
-          <li className='my-4 hover:text-yellow-400 transition-colors duration-300 glow'><a href="/projects">Projects</a></li>
+          <li className='my-4 hover:text-yellow-400 transition-colors duration-300 glow'><a href="/projectList">Projects</a></li>
           <li className='my-4 hover:text-yellow-400 transition-colors duration-300 glow'><a href="/contact">Contact</a></li>
         </ul>
       </div>

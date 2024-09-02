@@ -24,7 +24,7 @@ function Footer() {
                             </div>
                             <a href='/about' class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">About</a>
                             <a href='/services' class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">Services</a>
-                            <a href='/projects' class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">Projects</a>
+                            <a href='/projectList' class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">Projects</a>
                             <a href='/contact' class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">Contact</a>
                             <div class="flex flex-row space-x-8 items-center justify-between">
                                 <a href='https://www.facebook.com/profile.php?id=61563736215354' target='_blank' rel="noreferrer">
