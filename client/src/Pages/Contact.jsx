@@ -6,7 +6,6 @@ const ContactSection = () => {
 
   useEffect(()=>{
     AOS.init({
-      disable: "phone",
       duration: 700,
       easing: "ease-out-cubic",
     })
