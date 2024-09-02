@@ -16,8 +16,8 @@ function Projects() {
   };
 
   const fetchProjects = async () => {
-    const url = process.env.REACT_APP_API_URL;  
-    console.log("API URL:", url); 
+    const url = process.env.REACT_APP_API_URL;
+    console.log("API URL:", url);
     const options = {
       method: "GET"
     };
