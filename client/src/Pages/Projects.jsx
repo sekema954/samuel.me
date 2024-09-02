@@ -16,7 +16,7 @@ function Projects() {
   };
 
   const fetchProjects = async () => {
-    const url = process.env.REACT_APP_API_URL;
+    const url = "https://portfolio-samuel-70fe1a2461ea.herokuapp.com/projects";
     console.log("API URL:", url);
     const options = {
       method: "GET"
