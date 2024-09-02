@@ -56,11 +56,11 @@ function Projects() {
       <div>
         <div className='bg-black'>
           {selectedProject ? (
-            <div className='lg:grid lg:grid-cols-2 text-white'>
+            <div id='thumbnail' className='lg:grid lg:grid-cols-2 text-white'>
               <div className='px-[30px] py-[30px] flex items-center justify-center'>
                 <div className='lg:w-[400px] lg:h-[300px] bg-white'>
                   {/**shows active project thumbnail */}
-                  <img className='w-full h-full object-cover' id='thumbnail' src={selectedProject.thumbnail} alt={selectedProject.website_name} />
+                  <img className='w-full h-full object-cover' src={selectedProject.thumbnail} alt={selectedProject.website_name} />
                 </div>
               </div>
               <div className='px-[30px] py-[30px]'>
