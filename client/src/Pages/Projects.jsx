@@ -45,7 +45,6 @@ function Projects() {
   useEffect(() => {
     fetchProjects();
     AOS.init({
-      disable: "phone",
       duration: 700,
       easing: "ease-out-cubic",
     })
