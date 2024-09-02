@@ -59,12 +59,12 @@ function Projects() {
             <div className='lg:grid lg:grid-cols-2 text-white'>
               <div className='px-[30px] py-[30px] flex items-center justify-center'>
                 <div className='lg:w-[400px] lg:h-[300px] bg-white'>
-                  <img data-aos="zoom-in-up" className='w-full h-full object-cover' src={selectedProject.thumbnail} alt={selectedProject.website_name} />
+                  <img className='w-full h-full object-cover' src={selectedProject.thumbnail} alt={selectedProject.website_name} />
                 </div>
               </div>
               <div className='px-[30px] py-[30px]'>
-                <p data-aos="fade-right" className='my-4 text-2xl font-bold'>{selectedProject.website_name}</p>
-                <div data-aos="fade-right" className='flex gap-3 items-center my-4'>
+                <p className='my-4 text-2xl font-bold'>{selectedProject.website_name}</p>
+                <div className='flex gap-3 items-center my-4'>
                   <FontAwesomeIcon className='text-yellow-300' icon={faStar} />
                   <FontAwesomeIcon className='text-yellow-300' icon={faStar} />
                   <FontAwesomeIcon className='text-yellow-300' icon={faStar} />
@@ -73,15 +73,15 @@ function Projects() {
                   <p className='px-4'>Season 1</p>
                 </div>
                 <div className='my-5'>
-                  <p data-aos="fade-right">{selectedProject.website_description}</p>
+                  <p >{selectedProject.website_description}</p>
                 </div>
-                <div data-aos="fade-right" className='my-5 flex gap-4'>
+                <div className='my-5 flex gap-4'>
                   <p className='text-[10px] lg:text-[15px]'>Features:</p>
                   {selectedProject.website_features.map((feature, index) => (
                     <p className='text-[10px] lg:text-[15px]' key={index}>{feature}</p>
                   ))}
                 </div>
-                <div data-aos="fade-right" className='my-5 flex gap-4'>
+                <div  className='my-5 flex gap-4'>
                   <p className='text-[10px] lg:text-[15px]'>Technical Stack:</p>
                   {selectedProject.technical_stack.map((tech, index) => (
                     <img className='w-[17px] h-[15px]' key={index} src={tech} alt={tech}></img>
