@@ -52,11 +52,11 @@ function Projects() {
   }, []);
 
   return (
-    <div className=''>
+    <div id='thumbnail' className=''>
       <div>
         <div className='bg-black'>
           {selectedProject ? (
-            <div id='thumbnail' className='lg:grid lg:grid-cols-2 text-white'>
+            <div  className='lg:grid lg:grid-cols-2 text-white'>
               <div className='px-[30px] py-[30px] flex items-center justify-center'>
                 <div className='lg:w-[400px] lg:h-[300px] bg-white'>
                   {/**shows active project thumbnail */}

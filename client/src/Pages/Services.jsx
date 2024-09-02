@@ -67,7 +67,7 @@ function ServiceItem({ service }) {
       <p className='text-yellow-400 absolute top-2 lg:top-4 font-[600] text-sm lg:text-base'>{service.name}</p>
       <p className='text-white absolute px-2 lg:px-4 text-xs lg:text-sm'>{service.context}</p>
       <img
-        className={`rounded-[10px] h-full w-full transition-all duration-500 ease-in-out object-cover ${isHovered ? 'transform -translate-y-full opacity-0' : 'transform translate-y-0 opacity-100'}`}
+        className={`rounded-[10px] h-full w-full transition-all duration-500 ease-in-out object-cover ${isHovered ? 'transform -translate-y-full hidden' : 'transform translate-y-0 block'}`}
         src={service.src}
         alt={service.alt}
       />
