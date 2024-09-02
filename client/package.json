@@ -27,8 +27,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
+  
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -50,5 +52,7 @@
   "engines": {
     "node": "20.x",
     "npm": "10.x"
-  }
+  },
+  "proxy": "http://localhost:3001"
+  
 }
