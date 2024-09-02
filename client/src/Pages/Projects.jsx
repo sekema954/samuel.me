@@ -45,6 +45,7 @@ function Projects() {
   useEffect(() => {
     fetchProjects();
     AOS.init({
+      disable: "phone",
       duration: 700,
       easing: "ease-out-cubic",
     })
@@ -86,7 +87,7 @@ function Projects() {
                     <img className='w-[17px] h-[15px]' key={index} src={tech} alt={tech}></img>
                   ))}
                 </div>
-                <div data-aos="fade-right">
+                <div>
                   <a className='mx-4' href={selectedProject.go_live} target='_blank' rel="noreferrer">
                     <button className='w-[120px] my-4 bg-yellow-500 h-[35px] rounded-[5px] transition-all duration-500 hover:bg-yellow-600'>Go Live</button>
                   </a>
