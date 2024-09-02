@@ -5,7 +5,7 @@ const path = require('path');
 const cors = require("cors");
 
 const app = express();
-const PORT = "https://portfolio-samuel-70fe1a2461ea.herokuapp.com";
+const PORT = process.env.PORT || 3001;
 
 
 app.use(cors());
