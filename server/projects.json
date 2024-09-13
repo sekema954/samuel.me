@@ -25,7 +25,7 @@
 
         {
             "id": 2,
-            "website_name": "Beautifull Homes",
+            "website_name": "Dream Home",
             "website_description": "Discover your dream home,the premier destination for finding exceptional real estate opportunities. Whether you're buying, selling, or renting, our user-friendly platform offers a comprehensive selection of properties, detailed listings, and cutting-edge search tools to help you navigate the real estate market with ease.",
             "website_features":[
                 "Responsive Design",
@@ -42,7 +42,7 @@
             ],
             "thumbnail":"https://i.imgur.com/6b8Q9CT.png",
             "source_code":"",
-            "go_live":""
+            "go_live":"https://dreamhome-1d9852268c2c.herokuapp.com/"
 
         },
 
