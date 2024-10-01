@@ -19,7 +19,7 @@
                 "https://i.imgur.com/Q6Y8nNG.png"
             ],
             "thumbnail":"https://i.imgur.com/B7cHn1c.png",
-            "source_code":"",
+            "source_code":"https://github.com/sekema954/fashionStore.git",
             "go_live":"https://trendtrove-f26ac5f13dc1.herokuapp.com/"
 
         },
@@ -67,7 +67,7 @@
                 "https://i.imgur.com/Q6Y8nNG.png"
             ],
             "thumbnail":"https://i.imgur.com/lMFsPlP.png",
-            "source_code":"",
+            "source_code":"https://github.com/sekema954/jobhuntly.git",
             "go_live":"https://jobhuntly-fb6d9c77ebdd.herokuapp.com/"
 
         },
@@ -87,7 +87,7 @@
                 "https://i.imgur.com/epT5Xs0.png"
             ],
             "thumbnail":"https://i.imgur.com/G5YlSTp.png",
-            "source_code":"",
+            "source_code":"https://github.com/sekema954/jobhuntly.git",
             "go_live":"https://sekema954.github.io/nail-site/"
 
         },
@@ -108,7 +108,7 @@
                 "https://i.imgur.com/epT5Xs0.png"
             ],
             "thumbnail":"https://i.imgur.com/Es7nfDM.png",
-            "source_code":"",
+            "source_code":"https://github.com/sekema954/movieArchive.git",
             "go_live":"https://sekema954.github.io/movieArchive/"
 
         }
