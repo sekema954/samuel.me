@@ -2,12 +2,13 @@
     "projectLists": [
         {
             "id": 1,
-            "website_name": "Furniro",
-            "website_description": "Elevate your living spaces with Furniro, your premier destination for stylish, high-quality furniture. From timeless classics to contemporary designs, Furniro offers a curated selection of pieces that blend comfort, functionality, and aesthetics. Whether you're looking to furnish a cozy apartment or a spacious home, Furniro has the perfect furniture to match your taste and lifestyle.",
+            "website_name": "trendtrove",
+            "website_description": "A sleek and interactive fashion store where users can browse products, search for items, and add them to their cart, all with a responsive and modern design.",
             "website_features":[
                 "Responsive Design",
                 "Dynamic Content",
-                "Cart Functionality"
+                "Cart Functionality",
+                "Admin Dashboard"
             ],
             "technical_stack":[
                 "https://i.imgur.com/0C2LtSd.png",
@@ -17,9 +18,9 @@
                 "https://i.imgur.com/epT5Xs0.png",
                 "https://i.imgur.com/Q6Y8nNG.png"
             ],
-            "thumbnail":"https://i.imgur.com/heCaOUs.png",
+            "thumbnail":"https://i.imgur.com/B7cHn1c.png",
             "source_code":"",
-            "go_live":"https://furniro-429687875766.herokuapp.com/"
+            "go_live":"https://trendtrove-f26ac5f13dc1.herokuapp.com/"
 
         },
 
